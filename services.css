@@ -20,6 +20,8 @@
 .services-container {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
     gap: 2em;
     margin-top: 1em;
     margin-bottom: 4em;
@@ -108,7 +110,7 @@
     color: var(--accent-color);
 }
 
-.service-card .ideal-for{
+.service-card .ideal-for {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -129,6 +131,7 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
+    margin: 1em 0;
     gap: 1em;
 }
 
@@ -146,50 +149,46 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-#process-list {
-    list-style-type: none;
+.detail-button-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    counter-reset: item;
-    gap: 2em;
-    padding-left: 0;
+    margin-top: auto;
 }
 
-#process-list li {
-    color: var(--subtitle-color);
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    counter-increment: item;
+.detail-button {
     position: relative;
-    padding-left: 5em;
-}
-
-#process-item h3 {
-    color: var(--text-light);
-}
-
-#process-list li::before {
-    content: counter(item);
-    position: absolute;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-decoration: none;
+    background: var(--card-bg);
     color: var(--accent-color);
-    font-size: 1.8em;
-    width: 1.4em;
-    height: 1.4em;
-    border: 3px solid var(--accent-color);
-    border-radius: 50%;
+    border: none;
+    padding: 1em 1.5em;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.5em;
+    transition: 
+        transform 0.3s ease;
 }
 
-.process-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: first baseline;
+.detail-button:hover {
+    transform: translateY(-5px);
+}
+
+.detail-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(46, 204, 113, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.detail-button:hover::before {
+    opacity: 0.2;
 }
 
 @media (min-width: 430px) {

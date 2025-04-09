@@ -61,6 +61,8 @@ section {
 
 /* Tech I can use */
 #tech-grid {
+    list-style-type: none;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1em;
@@ -81,7 +83,7 @@ section {
 }
 
 .technology:hover {
-    top: -10px;
+    top: -5px;
     border: 1px solid #23c457;
 }
 
