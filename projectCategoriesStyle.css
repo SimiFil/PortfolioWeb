@@ -39,7 +39,6 @@
     min-height: 6em;
     color: #d4d3d8;
     line-height: 1.6;
-    margin-bottom: auto;
 }
 
 .tech-list {
@@ -65,7 +64,6 @@
 }
 
 .category-link {
-    display: inline-block;
     margin-top: auto;
     text-decoration: none;
     background: linear-gradient(90deg, #1a863f, #23c457);
@@ -98,13 +96,8 @@
     color: #23c457;
 }
 
-/* Media Queries */
 @media (min-width: 760px) {
     .category-container {
         grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .category-nav {
-        justify-content: center;
     }
 }

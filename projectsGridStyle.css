@@ -1,8 +1,4 @@
-#projects {
-    margin-top: 0;
-}
-
-#project-grid {
+.project-grid {
     font-size: 1.1em;
     list-style-type: none;
     display: grid;
@@ -12,7 +8,7 @@
     margin-top: 0;
 }
 
-#project-grid a {
+.project-grid a {
     color: white;
     text-decoration: none;
 }
@@ -223,7 +219,7 @@
 }
 
 @media (min-width: 760px) {
-    #project-grid {
+    .project-grid {
         grid-template-columns: repeat(2, minmax(150px, 1fr));
     }
 
