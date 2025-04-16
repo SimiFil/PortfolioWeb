@@ -12,7 +12,13 @@ window.onload = function() {
     
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(function(link) {
-        if (link.getAttribute('href') === pageName || (link.getAttribute('href') === "./" && pageName === "")) {
+        const fileName = link.getAttribute('href');
+        const dotIndex = fileName.indexOf(".");
+        const baseName = dotIndex !== -1 ? fileName.slice(0, dotIndex) : fileName;
+        const singularBaseName = baseName.endsWith("s") ? baseName.slice(0, -1) : baseName;
+        console.log("base name: " + baseName);
+
+        if ((currentPage.includes(singularBaseName) && singularBaseName !== "") || (link.getAttribute('href') === "./" && pageName === "")) {
             link.classList.add('current');
         }
     });

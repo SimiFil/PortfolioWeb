@@ -39,6 +39,34 @@ p {
     color: transparent;
 }
 
+/* Breadcrumb navigation */
+.breadcrumb {
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 2em;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #37363b;
+    content: "/";
+    margin-right: 0.5em;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    /* text-underline-offset: 4px; */
+    border-spacing: 1em;
+    color: #23c457;
+}
+
+.breadcrumb-item.active {
+    color: #37363b;
+}
+
 /* icons */
 .icons {
     display: flex;

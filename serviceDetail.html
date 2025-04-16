@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="layoutStyle.css">
     <link rel="stylesheet" href="navbarStyle.css">
     <link rel="stylesheet" href="footerStyle.css">
-    <link rel="stylesheet" href="indexStyle.css">
     <link rel="stylesheet" href="projectsGridStyle.css">
     <link rel="stylesheet" href="serviceDetail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,6 +36,17 @@
     </header>
 
     <main class="main-page-margin service-detail">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    IOS Application Development
+                </li>
+            </ol>
+        </nav>
+
         <section class="service-intro">
             <h1>iOS Application <span class="green-gradient-lr">Development</span></h1>
             <p>
@@ -97,13 +107,13 @@
             </ol>
         </section>
 
-        <section class="service-features">
+        <section id="service-features">
             <h2 class="section-title">Features included</h2>
             <p>
                 My iOS application development services include a wide range of features to ensure that your app is not only functional but also user-friendly and visually appealing.
                 Here are some of the key features I offer:
             </p>
-            <ul class="features-list">
+            <ul id="features-list">
                 <li>
                     <div class="feature-content">
                         <h3>Custom UI/UX Design</h3>
@@ -144,13 +154,13 @@
             </ul>
         </section>
 
-        <section class="pricing">
+        <section id="pricing">
             <h2 class="section-title">Pricing Options</h2>
             <p>
                 I offer flexible pricing options to accommodate different project scopes and budgets. Whether you're looking for a basic application or a more complex solution, I can tailor a package that meets your needs.
                 Below are some of the common packages I offer, but I'm always open to discussing custom solutions based on your specific requirements.
             </p>
-            <div class="price-cards">
+            <div id="price-cards">
                 <div class="price-card">
                     <div class="price-header">
                         <h3>Basic Package</h3>
