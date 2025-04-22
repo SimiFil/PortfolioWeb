@@ -3,7 +3,7 @@
     top: 0;
     height: 4em;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     z-index: 999;
 }
@@ -74,6 +74,14 @@
     background-color: transparent;
 }
 
+/* website logo */
+.logo {
+    width: 2em;
+    height: auto;
+    border-radius: 5px;
+    margin: 2em;
+}
+
 /* mobile burger menu */
 .burger-menu {
     display: block;
@@ -121,7 +129,13 @@
     transform: rotate(-135deg);
 }
 
-@media (min-width: 760px) {
+@media (min-width: 787px) {
+    .logo {
+        width: 3em;
+        position: absolute;
+        top: -1em;
+    }
+
     .burger-menu {
         display: none;
     }

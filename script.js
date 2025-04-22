@@ -10,7 +10,7 @@ window.onload = function() {
     console.log(currentPage);
     console.log("page name: " + pageName)
     
-    const navLinks = document.querySelectorAll('nav a');
+    const navLinks = document.querySelectorAll('.navigation a');
     navLinks.forEach(function(link) {
         const fileName = link.getAttribute('href');
         const dotIndex = fileName.indexOf(".");
