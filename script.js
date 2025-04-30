@@ -18,7 +18,7 @@ window.onload = function() {
         const singularBaseName = baseName.endsWith("s") ? baseName.slice(0, -1) : baseName;
         console.log("base name: " + baseName);
 
-        if ((currentPage.includes(singularBaseName) && singularBaseName !== "") || (link.getAttribute('href') === "./" && pageName === "")) {
+        if ((pageName.includes(singularBaseName) && singularBaseName !== "") || (link.getAttribute('href') === "./" && pageName === "")) {
             link.classList.add('current');
         }
     });
